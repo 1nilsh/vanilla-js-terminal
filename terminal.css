@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0f0f0f;
+    padding: 1em;
+}
+
+#terminal-window {
+    background-color: #0f0f0f;
+    width: 100%;
+    height: 100%;
+
+    font-family: monospace;
+    line-height: 1.2;
+    color: white;
+
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+#terminal-prompt {
+    color: white;
+    font-family: monospace;
+    caret-shape: block;
+}
+
+#terminal-prompt:before, .prompt-history:before {
+    content: "> $ ";
+}
+
+.prompt-history, .result-history {
+    color: white;
+    font-family: monospace;
+    white-space: pre-wrap;
+}
+
+[contenteditable] {
+    outline: 0 solid transparent;
+}
